@@ -1,5 +1,5 @@
-from . import Constants
-class MathOps:
+from constants import Constants
+class Operations:
     @staticmethod
     def sum(num1: int | float, num2: int | float) -> int | float:
         if isinstance(num1,(int,float)) and isinstance(num2, (int,float)):
@@ -54,23 +54,29 @@ class MathOps:
                 raise ValueError("You can't get a factorial of negative numbers")
             if num in (0,1):
                 return 1
-            return cls.fact(num-1) * num
+            else:
+                result = 1
+                factorial = 2
+                while factorial <= num:
+                    result *= factorial
+                    factorial += 1
+                return result
         else:
             raise ValueError("You can only get factorial of integers")
     @staticmethod
-    def ln(num: int | float) -> float:
+    def natural_log(num: int | float) -> float:
         factor = 0
         while 0 < num > 2:
-            num = MathOps.div(num, Constants.e)
+            num = Operations().div(num, Constants.e)
             factor += 1
         terms = 1
-        base_term = MathOps.div(MathOps.pow(num - 1, terms),terms)
+        base_term = Operations().div(Operations.pow(num - 1, terms),terms)
         for _ in range(100):
             terms += 1
             if terms % 2 == 0:
-                base_term -= MathOps.div(MathOps.pow(num - 1, terms), terms)
+                base_term -= Operations.div(Operations.pow(num - 1, terms), terms)
             else:
-                base_term += MathOps.div(MathOps.pow(num - 1, terms),terms)
+                base_term += Operations.div(Operations.pow(num - 1, terms),terms)
         return base_term + factor
     @staticmethod
     def log(num: int | float, base: int | float) -> float:
@@ -78,4 +84,4 @@ class MathOps:
             raise ValueError("You can't get the log of a number in base 1 or lower")
         if num <= 0:
             raise ValueError("You can't get a non positive number logarithm")
-        return MathOps.div(MathOps.ln(base),MathOps.ln(num))
+        return Operations.div(Operations.natural_log(base),Operations.natural_log(num))
