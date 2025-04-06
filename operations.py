@@ -1,4 +1,5 @@
 from constants import Constants
+from transformations import Transformations
 class Operations:
     @staticmethod
     def sum(num1: int | float, num2: int | float) -> int | float:
@@ -52,14 +53,12 @@ class Operations:
         if isinstance(num, int):
             if num < 0:
                 raise ValueError("You can't get a factorial of negative numbers")
-            if num in (0,1):
+            elif num == 0:
                 return 1
             else:
                 result = 1
-                factorial = 2
-                while factorial <= num:
+                for factorial in range(1,num+1):
                     result *= factorial
-                    factorial += 1
                 return result
         else:
             raise ValueError("You can only get factorial of integers")
@@ -69,9 +68,8 @@ class Operations:
         while 0 < num > 2:
             num = Operations().div(num, Constants.e)
             factor += 1
-        terms = 1
-        base_term = Operations().div(Operations.pow(num - 1, terms),terms)
-        for _ in range(100):
+        base_term = Operations().div(Operations.pow(num - 1, 1),1)
+        for terms in range(1,100):
             terms += 1
             if terms % 2 == 0:
                 base_term -= Operations.div(Operations.pow(num - 1, terms), terms)
@@ -85,3 +83,30 @@ class Operations:
         if num <= 0:
             raise ValueError("You can't get a non positive number logarithm")
         return Operations.div(Operations.natural_log(base),Operations.natural_log(num))
+    @classmethod
+    def sin(cls, angle: int | float) -> float:
+        radians = Transformations.degree_to_radians(angle)
+        terms = 3
+        base_term = radians - cls.pow(radians,terms) / cls.fact(terms)
+        for times in range(20):
+            terms += 2
+            if times % 2 == 0:
+                base_term += cls.pow(radians,terms) / cls.fact(terms)
+            else:
+                base_term -= cls.pow(radians,terms) / cls.fact(terms)
+        return base_term
+    @classmethod
+    def cos(cls, angle: int | float) -> float:
+        radians = Transformations.degree_to_radians(angle)
+        terms = 2
+        base_term = 1 - cls.pow(radians,terms) / cls.fact(terms)
+        for times in range(20):
+            terms += 2
+            if times % 2 == 0:
+                base_term += cls.pow(radians,terms) / cls.fact(terms)
+            else:
+                base_term -= cls.pow(radians,terms) / cls.fact(terms)
+        return base_term
+    @classmethod
+    def tan(cls, angle: int | float) -> float:
+        return cls.sin(angle) / cls.cos(angle)
