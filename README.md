@@ -76,7 +76,7 @@ For more information about me or the project:
 
 ## LICENSE
 
-This Open Source Project is using a MIT license [License MIT](LICENSE.md) acess the file for more details.
+This Open Source Project is using a MIT license [License MIT](LICENSE) acess the file for more details.
 
 ### GUARANTEED PERMISSIONS FROM MIT LICENSE
 
