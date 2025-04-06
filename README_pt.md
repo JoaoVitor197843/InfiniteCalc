@@ -10,12 +10,12 @@
 
 # 📑 INDICE
 
-[Descrição](#️-descrição)
-[Ferramentas disponíveis](#️-ferramentas-disponíveis)
-[Instalação](#️-instalação)
-[Exemplos de uso](#-exemplos-de-uso)
-[Contribuições](#-contribuições)
-[Licença](#licença)
+- [Descrição](#️-descrição)
+- [Ferramentas disponíveis](#️-ferramentas-disponíveis)
+- [Instalação](#️-instalação)
+- [Exemplos de uso](#-exemplos-de-uso)
+- [Contribuições](#-contribuições)
+- [Licença](#licença)
 
 ## 🗣️ DESCRIÇÃO
 
@@ -23,21 +23,21 @@ Infinite Calc é uma biblioteca matemática totalmente baseada em python que abo
 
 ## ⚒️ FERRAMENTAS DISPONÍVEIS
 
-- **Operações Básicas**:
+- `Operações Básicas`:
   - Soma, Subtração, Multiplicação, Divisão.
 
-- **Operações Avançadas**:
+- `Operações Avançadas`:
   - Potenciação: Calcula a potencia de um número por N potência
   - Radiciação N-ésima: Calcula raízes N-ésimas
   - Fatorial: Calcula o fatorial de N número
   - Logaritmação: Calcula logaritmos de qualquer base além de logaritmos naturais
 
-- **Resolvedor de Equações**:
+- `Resolvedor de Equações`:
   - Equação do primeiro grau(afim): Calcula a raiz de uma equação afim
   - Equação do segundo grau(bhaskara): Calcula as 2 raízes de uma equação quadrática, suportando c = 0
   - Discriminante(delta): Calcula o discriminante da equação quadrática
 
-- **Constantes matemáticas com precisão**:
+- `Constantes matemáticas com precisão`:
   - π: Valor de pi com precisão de 40 casas decimais
   - e: Constante de Euler com precisão de 40 casas decimais
 
@@ -45,11 +45,11 @@ Infinite Calc é uma biblioteca matemática totalmente baseada em python que abo
 
 **Clone o Repositório**:  
 
-´´´bash git clone <https://github.com/GhostPro1736/InfiniteCalc.git>´´´
+```git clone <https://github.com/GhostPro1736/InfiniteCalc.git>```
 
 **Importe a biblioteca**:
 
-import InfiniteCalc ´módulo´
+import InfiniteCalc `módulo`
 
 ## 📖 EXEMPLOS DE USO
 

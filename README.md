@@ -10,12 +10,12 @@
 
 # 📑INDEX
 
-[Description](#️-description)
-[Features](#️-features)
-[Installation](#️-installation)
-[Usage examples](#-usage-example)
-[Contributions](#-contributions)
-[License](#license)
+- [Description](#️-description)
+- [Features](#️-features)
+- [Installation](#️-installation)
+- [Usage examples](#-usage-example)
+- [Contributions](#-contributions)
+- [License](#license)
 
 ## 🗣️ DESCRIPTION
 
@@ -23,21 +23,21 @@ Infinite Calc is a math library entirely based on python that covers operations 
 
 ## ⚒️ FEATURES
 
-- ´Basic Operations´:
+- `Basic Operations`:
   - Addition, Subtract, Multiply, Division.
 
-- ´Avanced Operations´:
+- `Avanced Operations`:
   - Power: Calculates the    power of a number raised to N.
   - Nth rooting: Calculates nth roots.
   - Factorial: Calculates the factorial of a number.
   - Logarithms: Calculates logarithms of any base as well as natural logarithms.
 
-- ´Equation Solver´:
+- `Equation Solver`:
   - First-degree equation (linear): Calculates the root of an linear equation.
   - Second-degree equation (Bhaskara's formula): Calculate the 2 roots of a quadratic equation, supporting c = 0.
   - Discriminant(delta): Calculates the discriminant of the quadratic equation.
 
-- ´Mathematics constants with precision´:
+- `Mathematics constants with precision`:
   - π: Pi value accurate to 40 decimal places.
   - e: Euler's constant with 40 decimal places of precision.
 
@@ -45,11 +45,11 @@ Infinite Calc is a math library entirely based on python that covers operations 
 
 **Clone the repository**:  
 
-´´´bash git clone <https://github.com/GhostPro1736/InfiniteCalc.git>´´´
+```git clone <https://github.com/GhostPro1736/InfiniteCalc.git>```
 
 **Import the library**:
 
-import InfiniteCalc ´module´
+import InfiniteCalc `module`
 
 ## 📖 USAGE EXAMPLE
 
