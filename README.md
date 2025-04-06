@@ -1,38 +1,57 @@
-# INFINITE CALC
+
+# 🧮 INFINITE CALC
+
+![Static Badge](https://img.shields.io/badge/status-in_development-yellow)
+![License](https://img.shields.io/github/license/JoaoVitor197843/InfiniteCalc)
+![Last Commit](https://img.shields.io/github/last-commit/JoaoVitor197843/InfiniteCalc)
+![Python](https://img.shields.io/badge/python-3.x-blue)
 
 > A comprehensive math library made exclusively in Python - covering everything from the basic to advanced!
 
-## DESCRIPTION
+# 📑INDEX
+
+[Description](#️-description)
+[Features](#️-features)
+[Installation](#️-installation)
+[Usage examples](#-usage-example)
+[Contributions](#-contributions)
+[License](#license)
+
+## 🗣️ DESCRIPTION
 
 Infinite Calc is a math library entirely based on python that covers operations and expressions from the simplest to the most complex. In addition, this library includes calculations from other areas such as physics, chemistry, geography and literature.
 
-## FEATURES
+## ⚒️ FEATURES
 
-- **Basic Operations**:
+- ´Basic Operations´:
   - Addition, Subtract, Multiply, Division.
 
-- **Avanced Operations**:
+- ´Avanced Operations´:
   - Power: Calculates the    power of a number raised to N.
   - Nth rooting: Calculates nth roots.
   - Factorial: Calculates the factorial of a number.
   - Logarithms: Calculates logarithms of any base as well as natural logarithms.
 
-- **Equation Solver**:
+- ´Equation Solver´:
   - First-degree equation (linear): Calculates the root of an linear equation.
   - Second-degree equation (Bhaskara's formula): Calculate the 2 roots of a quadratic equation, supporting c = 0.
   - Discriminant(delta): Calculates the discriminant of the quadratic equation.
 
-- **Mathematics constants with precision**:
+- ´Mathematics constants with precision´:
   - π: Pi value accurate to 40 decimal places.
   - e: Euler's constant with 40 decimal places of precision.
 
-## INSTALLATION
+## ⚙️ INSTALLATION
 
 **Clone the repository**:  
 
-git clone <https://github.com/GhostPro1736/InfiniteCalc.git>
+´´´bash git clone <https://github.com/GhostPro1736/InfiniteCalc.git>´´´
 
-## USAGE EXAMPLE
+**Import the library**:
+
+import InfiniteCalc ´module´
+
+## 📖 USAGE EXAMPLE
 
 ### CALCULATING LOGARITHMS OF ANY BASE AND NATURAL LOGARITHMS
 
@@ -52,9 +71,19 @@ from InfiniteCalc import EqSolver
 print(EqSolver.bhaskara(1,-3,2)) = (2.0, 1.0)  
 
 **Discriminant delta**  
-print(EqSolver.delta(1,-3,2)) = 1  
+print(EqSolver.delta(1,-3,2)) = 1
 
-## CONTRIBUTIONS
+## CONSTANTS
+
+from InfiniteCalc import Constants
+
+**Pi value**  
+print(Constants.pi)
+
+**Euler's constant**
+print(Constants.e)
+
+## 🏆 CONTRIBUTIONS
 
 Contributions are always welcome! If you would like to contribute to this project, follow these steps:
 
@@ -66,7 +95,9 @@ Contributions are always welcome! If you would like to contribute to this projec
 6. Fill out the required information for the pull request, such as a detailed description of the changes you made. Make sure to provide clear and concise information so that the owner of the original repository can understand your contributions.
 7. Click "Create pull request" to submit the pull request to the original repository. I will check the changes as soon as possible to bring new features or the necessary changes.
 
-For more information about me or the project:
+## 🤳 CONTACTS
+
+If you want to talk with me, feel free to use any of this forms of contact:
 
 - GitHub: [JoaoVitor197843](https://github.com/JoaoVitor197843)
 
@@ -74,15 +105,10 @@ For more information about me or the project:
 
 - Email: [João_Vitor](<mailto:jv2093809@gmail.com?subject=InfiniteCalc&bodyHi! I want to propose an idea to InfiniteCalc.>)
 
+## 👨‍💻 AUTORS
+
+[<img loading="lazy" src="https://avatars.githubusercontent.com/u/118195418?v=4" width=115><br><sub>João Vitor</sub>](https://github.com/JoaoVitor197843)
+
 ## LICENSE
 
 This Open Source Project is using a MIT license [License MIT](LICENSE.md) acess the file for more details.
-
-### GUARANTEED PERMISSIONS FROM MIT LICENSE
-
-- Comercial Use.
-- Modification.
-- Distribution.
-- Private Use.
-
-Feel free to use this library as you see fit. Thank you for taking the time to learn about Infinite Calc — wishing all developers an amazing day!

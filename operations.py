@@ -2,32 +2,49 @@ from constants import Constants
 from transformations import Transformations
 class Operations:
     @staticmethod
-    def sum(num1: int | float, num2: int | float) -> int | float:
-        if isinstance(num1,(int,float)) and isinstance(num2, (int,float)):
-            return num1 + num2
-        else:
-            raise TypeError("You can only get result of integers or floats")
-    @staticmethod
-    def sub(num1: int | float, num2: int | float) -> int | float:
-        if isinstance(num1,(int,float)) and isinstance(num2, (int,float)):
-            return num1 - num2
-        else:
-            raise TypeError("You can only get result of integers or floats")
-    @staticmethod
-    def mult(num1: int | float, num2: int | float) -> int | float:
-        if isinstance(num1,(int,float)) and isinstance(num2, (int,float)):
-            return num1 * num2
-        else:
-            raise TypeError("You can only get result of integers or floats")
-    @staticmethod
-    def div(num1: int | float, num2: int | float) -> int | float:
-        if isinstance(num1,(int,float)) and isinstance(num2, (int,float)):
-            if num2 != 0:
-                return num1 / num2
+    def sum(*nums: int | float) -> int | float:
+        if len(nums) < 2:
+            raise IndexError("You need to pass 2 numbers or more")
+        sum = nums[0]
+        for num in nums[1:]:
+            if isinstance(num, (int, float)):
+               sum += num
             else:
-                raise ZeroDivisionError("You cannot divide any number By zero")
-        else:
-            raise TypeError("You can only get result of integers or floats")
+                raise TypeError("You can only get result of integers or floats")
+        return sum
+    @staticmethod
+    def sub(*nums: int | float) -> int | float:
+        if len(nums) < 2:
+            raise IndexError("You need to pass 2 numbers or more")
+        sub = nums[0]
+        for num in nums[1:]:
+            if isinstance(num, (int, float)):
+               sub -= num
+            else:
+                raise TypeError("You can only get result of integers or floats")
+        return sub
+    @staticmethod
+    def mult(*nums: int | float) -> int | float:
+        if len(nums) < 2:
+            raise IndexError("You need to pass 2 numbers or more")
+        mul = nums[0]
+        for num in nums[1:]:
+            if isinstance(num, (int, float)):
+               mul *= num
+            else:
+                raise TypeError("You can only get result of integers or floats")
+        return mul
+    @staticmethod
+    def div(*nums: int | float) -> int | float:
+        if len(nums) < 2:
+            raise IndexError("You need to pass 2 numbers or more")
+        div = nums[0]
+        for num in nums[1:]:
+            if isinstance(num, (int, float)):
+               div /= num
+            else:
+                raise TypeError("You can only get result of integers or floats")
+        return div
     @staticmethod
     def pow(num: int | float, power: int | float= 2) -> int | float:
         return num ** power
@@ -66,7 +83,7 @@ class Operations:
     def natural_log(num: int | float) -> float:
         factor = 0
         while 0 < num > 2:
-            num = Operations().div(num, Constants.e)
+            num = Operations.div(num, Constants.e)
             factor += 1
         base_term = Operations().div(Operations.pow(num - 1, 1),1)
         for terms in range(1,100):

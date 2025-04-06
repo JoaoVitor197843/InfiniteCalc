@@ -1,13 +1,27 @@
 
-# INFINITE CALC
+# 🧮 INFINITE CALC
+
+![Em Desenvolvimento](https://img.shields.io/badge/status-in_development-yellow)
+![Licença](https://img.shields.io/github/license/JoaoVitor197843/InfiniteCalc)
+![Ultimo Commit](https://img.shields.io/github/last-commit/JoaoVitor197843/InfiniteCalc)
+![Python](https://img.shields.io/badge/python-3.x-blue)
 
 > Uma biblioteca matemática abrangente feita exclusivamente em python abordando do básico ao avançado!
 
-## DESCRIÇÃO
+# 📑 INDICE
+
+[Descrição](#️-descrição)
+[Ferramentas disponíveis](#️-ferramentas-disponíveis)
+[Instalação](#️-instalação)
+[Exemplos de uso](#-exemplos-de-uso)
+[Contribuições](#-contribuições)
+[Licença](#licença)
+
+## 🗣️ DESCRIÇÃO
 
 Infinite Calc é uma biblioteca matemática totalmente baseada em python que aborda operações e expressões das mais simples as mais complexas, além disso esta biblioteca incluirá calculos de outras áreas como física, química, geografia e letras.
 
-## FERRAMENTAS DISPONÍVEIS
+## ⚒️ FERRAMENTAS DISPONÍVEIS
 
 - **Operações Básicas**:
   - Soma, Subtração, Multiplicação, Divisão.
@@ -27,13 +41,17 @@ Infinite Calc é uma biblioteca matemática totalmente baseada em python que abo
   - π: Valor de pi com precisão de 40 casas decimais
   - e: Constante de Euler com precisão de 40 casas decimais
 
-## INSTALAÇÃO
+## ⚙️ INSTALAÇÃO
 
 **Clone o Repositório**:  
 
-git clone <https://github.com/GhostPro1736/InfiniteCalc.git>
+´´´bash git clone <https://github.com/GhostPro1736/InfiniteCalc.git>´´´
 
-## EXEMPLO DE USO
+**Importe a biblioteca**:
+
+import InfiniteCalc ´módulo´
+
+## 📖 EXEMPLOS DE USO
 
 ### CÁLCULO DE LOGARITMOS DE QUALQUER BASE E LOGARITMOS NATURAIS
 
@@ -55,7 +73,17 @@ print(EqSolver.bhaskara(1,-3,2)) = (2.0, 1.0)
 **Discriminante delta**  
 print(EqSolver.delta(1,-3,2)) = 1  
 
-## CONTRIBUIÇÕES
+### CONSTANTES
+
+from InfiniteCalc import Constants
+
+**Valor de Pi**  
+print(Constants.pi)
+
+**Constante de Euler**
+print(Constants.e)
+
+## 🏆 CONTRIBUIÇÕES
 
 Contribuições sempre serão bem vindas! caso deseje contribuir para este projeto siga os passos a seguir:  
 
@@ -67,7 +95,9 @@ Contribuições sempre serão bem vindas! caso deseje contribuir para este proje
 6. Preencha o Pull Request: Preencha as informações necessárias para o pull request, como uma descrição detalhada das alterações feitas. Certifique-se de fornecer informações claras e concisas para que o proprietário do repositório original possa entender suas contribuições.
 7. Envie o Pull Request: Clique em "Create pull request" para enviar o pull request para o repositório original. Eu irei verificar as mudanças assim que possível para trazer novas features ou as devidas alterações
 
-Para mais informações sobre mim ou o projeto:
+## 🤳 CONTATOS
+
+Caso deseje entrar em contato comigo, fique a vontade para utilizar qualquer um dos meios de contato a seguir:
 
 - GitHub: [JoaoVitor197843](https://github.com/JoaoVitor197843)
 
@@ -75,15 +105,10 @@ Para mais informações sobre mim ou o projeto:
 
 - Email: [João_Vitor](<mailto:jv2093809@gmail.com?subject=InfiniteCalc&body=Olá! eu gostaria de propor uma ideia para o InfiniteCalc>)
 
+## 👨‍💻 AUTORES
+
+[<img loading="lazy" src="https://avatars.githubusercontent.com/u/118195418?v=4" width=115><br><sub>João Vitor</sub>](https://github.com/JoaoVitor197843)
+
 ## LICENÇA
 
 Este projeto open source está utilizando a [licença MIT](LICENSE.md). Acesse o arquivo para mais detalhes.
-
-### PERMISSÕES GARANTIDAS PELA LICENÇA MIT
-
-- Uso comercial
-- Modificação
-- Distribuição
-- Uso privado
-
-fique a vontade para utilizar esta biblioteca da forma que desejar. Obrigado por dedicar seu tempo ao Infinite Calc — desejo um ótimo dia a todos os desenvolvedores que lerem isto!
