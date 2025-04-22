@@ -26,7 +26,7 @@ Infinite Calc is a math library entirely based on python that covers operations 
 - `Basic Operations`:
   - Addition, Subtract, Multiply, Division.
 
-- `Avanced Operations`:
+- `Advanced Operations`:
   - Power: Calculates the    power of a number raised to N.
   - Nth rooting: Calculates nth roots.
   - Factorial: Calculates the factorial of a number.
@@ -34,7 +34,7 @@ Infinite Calc is a math library entirely based on python that covers operations 
 
 - `Equation Solver`:
   - First-degree equation (linear): Calculates the root of an linear equation.
-  - Second-degree equation (Bhaskara's formula): Calculate the 2 roots of a quadratic equation, supporting c = 0.
+  - Second-degree equation (Bhaskara's formula): Calculate the two roots of a quadratic equation, supporting c = 0.
   - Discriminant(delta): Calculates the discriminant of the quadratic equation.
 
 - `Mathematics constants with precision`:
